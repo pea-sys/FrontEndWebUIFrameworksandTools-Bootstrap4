@@ -34,7 +34,7 @@
                                 class="fa fa-address-card fa-lg"></span>Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#" id="loginButton">
+                    <a id="loginButton">
                         <span class="fa fa-sign-in" ></span>Login
                     </a>
                 </span>
@@ -167,8 +167,8 @@
                 <div class="col-12 col-sm">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a class="btn btn-warning btn-sm btn-block" role="button" data-toggle="modal" id="ReserveTableButton"
-                        data-target="#">Reserve a Table</a>
+                    <a class="btn btn-warning btn-sm btn-block" role="button" id="ReserveTableButton"
+                        >Reserve a Table</a>
                 </div>
 
             </div>
@@ -397,38 +397,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#mycarousel').carousel({ interval: 2000 })
-            $('#carouselButton').click(function () {
-                if ($('#carouselButton').children('span').hasClass('fa-pause')) {
-                    $('#mycarousel').carousel('pause');
-                    $('#carouselButton').children('span').removeClass('fa-pause');
-                    $('#carouselButton').children('span').addClass('fa-play');
-                }
-                else if ($('#carouselButton').children('span').hasClass('fa-play')) {
-                    $('#mycarousel').carousel('cycle');
-                    $('#carouselButton').children('span').hasClass('fa-cycle');
-                    $('#carouselButton').children('span').removeClass('fa-play');
-                    $('#carouselButton').children('span').addClass('fa-pause');
-                }
-            });
-
-            $("#ReserveTableButton").click(function () {
-                $("#reserveModal").modal('show');
-            });
-            
-            $("#loginButton").click(function () {
-                $("#loginModal").modal('show');
-            });
-        });
-    </script>
-
-    <!--<script>
-        $(document).ready(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>-->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
