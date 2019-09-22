@@ -1,6 +1,9 @@
 # FrontEndWebUIFrameworksandTools-Bootstrap4
 courseraのFront-End Web UI Frameworks and Tools;bootstrap-4コースの成果物  
 Bitbucketからimport  
+
+作業する場合はnpm installが必要だと思われる
+
 ### タスク
  * Git,Node.js,Node PackageManagerの使用方法
  * BootstrapのGridSystemの理解
